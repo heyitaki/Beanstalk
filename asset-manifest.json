@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03afd74a.chunk.css",
+    "main.js": "/static/js/main.9676b633.chunk.js",
+    "main.js.map": "/static/js/main.9676b633.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5c54d3fe.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5c54d3fe.js.map",
+    "static/js/2.7d20bfed.chunk.js": "/static/js/2.7d20bfed.chunk.js",
+    "static/js/2.7d20bfed.chunk.js.map": "/static/js/2.7d20bfed.chunk.js.map",
+    "static/js/3.918c5034.chunk.js": "/static/js/3.918c5034.chunk.js",
+    "static/js/3.918c5034.chunk.js.map": "/static/js/3.918c5034.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.03afd74a.chunk.css.map": "/static/css/main.03afd74a.chunk.css.map",
+    "static/js/2.7d20bfed.chunk.js.LICENSE.txt": "/static/js/2.7d20bfed.chunk.js.LICENSE.txt",
+    "static/media/Barn.d81a776e.svg": "/static/media/Barn.d81a776e.svg",
+    "static/media/index.css": "/static/media/LucidaConsoleRegular.c52c29b6.ttf",
+    "static/media/Sun.e02a1495.svg": "/static/media/Sun.e02a1495.svg",
+    "static/media/bean-eth-logo.3f800aef.svg": "/static/media/bean-eth-logo.3f800aef.svg",
+    "static/media/bean-eth-swap-logo.bdf29328.svg": "/static/media/bean-eth-swap-logo.bdf29328.svg",
+    "static/media/bean-logo.50be834d.svg": "/static/media/bean-logo.50be834d.svg",
+    "static/media/App.css": "/static/media/beanstalk-background.86e2d67e.svg",
+    "static/media/black-sun.7e2e7598.svg": "/static/media/black-sun.7e2e7598.svg",
+    "static/media/claimable-icon.c6127cf9.svg": "/static/media/claimable-icon.c6127cf9.svg",
+    "static/media/eth-logo.b1d3f1e9.svg": "/static/media/eth-logo.b1d3f1e9.svg",
+    "static/media/lp-logo.a7d6c1ec.svg": "/static/media/lp-logo.a7d6c1ec.svg",
+    "static/media/pod-logo.f3120cbd.svg": "/static/media/pod-logo.f3120cbd.svg",
+    "static/media/seed-logo.fe1c2c85.svg": "/static/media/seed-logo.fe1c2c85.svg",
+    "static/media/silo-icon.9e5b4cff.svg": "/static/media/silo-icon.9e5b4cff.svg",
+    "static/media/stalk-logo.624c3b0b.svg": "/static/media/stalk-logo.624c3b0b.svg",
+    "static/media/transit-icon.b69f1fba.svg": "/static/media/transit-icon.b69f1fba.svg",
+    "static/media/uniswap-icon.43af9019.svg": "/static/media/uniswap-icon.43af9019.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c54d3fe.js",
+    "static/js/2.7d20bfed.chunk.js",
+    "static/css/main.03afd74a.chunk.css",
+    "static/js/main.9676b633.chunk.js"
+  ]
+}
