@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.44d94a60.chunk.css",
-    "main.js": "/static/js/main.5d1303cc.chunk.js",
-    "main.js.map": "/static/js/main.5d1303cc.chunk.js.map",
+    "main.css": "/static/css/main.13258a19.chunk.css",
+    "main.js": "/static/js/main.db22f90f.chunk.js",
+    "main.js.map": "/static/js/main.db22f90f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.656256e7.js",
     "runtime-main.js.map": "/static/js/runtime-main.656256e7.js.map",
-    "static/js/2.82431390.chunk.js": "/static/js/2.82431390.chunk.js",
-    "static/js/2.82431390.chunk.js.map": "/static/js/2.82431390.chunk.js.map",
+    "static/js/2.53f77806.chunk.js": "/static/js/2.53f77806.chunk.js",
+    "static/js/2.53f77806.chunk.js.map": "/static/js/2.53f77806.chunk.js.map",
     "static/js/3.c760df16.chunk.js": "/static/js/3.c760df16.chunk.js",
     "static/js/3.c760df16.chunk.js.map": "/static/js/3.c760df16.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.44d94a60.chunk.css.map": "/static/css/main.44d94a60.chunk.css.map",
-    "static/js/2.82431390.chunk.js.LICENSE.txt": "/static/js/2.82431390.chunk.js.LICENSE.txt",
+    "static/css/main.13258a19.chunk.css.map": "/static/css/main.13258a19.chunk.css.map",
+    "static/js/2.53f77806.chunk.js.LICENSE.txt": "/static/js/2.53f77806.chunk.js.LICENSE.txt",
     "static/media/Barn.d81a776e.svg": "/static/media/Barn.d81a776e.svg",
     "static/media/index.css": "/static/media/LucidaConsoleRegular.c52c29b6.ttf",
     "static/media/Sun.e02a1495.svg": "/static/media/Sun.e02a1495.svg",
@@ -21,19 +21,22 @@
     "static/media/App.css": "/static/media/beanstalk-background.86e2d67e.svg",
     "static/media/black-sun.7e2e7598.svg": "/static/media/black-sun.7e2e7598.svg",
     "static/media/claimable-icon.c6127cf9.svg": "/static/media/claimable-icon.c6127cf9.svg",
+    "static/media/discord-icon.e174ddb7.svg": "/static/media/discord-icon.e174ddb7.svg",
     "static/media/eth-logo.b1d3f1e9.svg": "/static/media/eth-logo.b1d3f1e9.svg",
+    "static/media/etherscan-logo.47cb90f5.svg": "/static/media/etherscan-logo.47cb90f5.svg",
     "static/media/lp-logo.a7d6c1ec.svg": "/static/media/lp-logo.a7d6c1ec.svg",
     "static/media/pod-logo.f3120cbd.svg": "/static/media/pod-logo.f3120cbd.svg",
     "static/media/seed-logo.fe1c2c85.svg": "/static/media/seed-logo.fe1c2c85.svg",
     "static/media/silo-icon.9e5b4cff.svg": "/static/media/silo-icon.9e5b4cff.svg",
     "static/media/stalk-logo.624c3b0b.svg": "/static/media/stalk-logo.624c3b0b.svg",
     "static/media/transit-icon.b69f1fba.svg": "/static/media/transit-icon.b69f1fba.svg",
-    "static/media/uniswap-icon.43af9019.svg": "/static/media/uniswap-icon.43af9019.svg"
+    "static/media/uniswap-icon.43af9019.svg": "/static/media/uniswap-icon.43af9019.svg",
+    "static/media/uniswap-logo-black.c0d9a55f.svg": "/static/media/uniswap-logo-black.c0d9a55f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.656256e7.js",
-    "static/js/2.82431390.chunk.js",
-    "static/css/main.44d94a60.chunk.css",
-    "static/js/main.5d1303cc.chunk.js"
+    "static/js/2.53f77806.chunk.js",
+    "static/css/main.13258a19.chunk.css",
+    "static/js/main.db22f90f.chunk.js"
   ]
 }
