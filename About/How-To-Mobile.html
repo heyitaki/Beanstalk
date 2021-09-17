@@ -63,22 +63,16 @@ function toggleImage(imageId) {
     <!-- <p>Most instructions have an accompanying photo to assist you. To display the photo, click the 🖼 icon next to a step. The photos for this guide were taken in the Brave Browser, but Metamask can also be connected to Beanstalk using multiple other browsers.</p> -->
     <h2 id="how-to">How To</h2>
     <ul>
-      <li><a href="#earn-interest-from-beanstalk-in-three-simple-steps">Earn Interest from Beanstalk in 9 Simple Steps</a></li>
+      <li><a href="#earn-interest-from-beanstalk-in-one-transaction">Earn Interest from Beanstalk in 1 transaction</a></li>
       <li><a href="#connect-to-beanstalk">Connect to Beanstalk</a></li>
-      <li><a href="#buy-sell-and-send-beans">Buy, Sell and Send Beans</a></li>
-        <ul>
-          <li><a href="#buy-and-sell-beans">Buy and Sell Beans</a></li>
-          <li><a href="#complex-buy-and-sell">Complex Buy and Sell</a></li>
-          <li><a href="#send-beans">Send Beans</a></li>
-        </ul>
       <li><a href="#earn-interest-on-beans">Earn Interest on Beans</a>
         <ul>
           <li><a href="#become-a-silo-member">Become a Silo Member</a>
             <ul>
-              <li><a href="#deposit-beans">Deposit Beans</a></li>
-              <li><a href="#complex-bean-deposit">Complex Bean Deposit</a></li>
               <li><a href="#deposit-lp-tokens">Deposit LP Tokens</a></li>
               <li><a href="#complex-lp-token-deposit">Complex LP Token Deposit</a></li>
+              <li><a href="#deposit-beans">Deposit Beans</a></li>
+              <li><a href="#complex-bean-deposit">Complex Bean Deposit</a></li>
             </ul>
           </li>
           <li><a href="#become-a-bean-farmer">Become a Bean Farmer</a>
@@ -91,15 +85,21 @@ function toggleImage(imageId) {
       </li>
       <li><a href="#redeem-interest">Redeem Interest</a>
         <ul>
-          <li><a href="#withdraw-beans">Withdraw Beans</a></li>
           <li><a href="#withdraw-lp-tokens">Withdraw LP Tokens</a></li>
+          <li><a href="#withdraw-beans">Withdraw Beans</a></li>
           <li><a href="#claim-all-assets">Claim All Assets</a></li>
-          <li><a href="#claim-additional-stalk">Farm Additional Stalk</a></li>
-          <li><a href="#claim-only-bean-withdrawals">Claim Only Bean Withdrawals</a></li>
+          <li><a href="#farm-grown-stalk">Farm Grown Stalk</a></li>
           <li><a href="#claim-only-lp-token-withdrawals">Claim Only LP Token Withdrawals</a></li>
+          <li><a href="#claim-only-bean-withdrawals">Claim Only Bean Withdrawals</a></li>
           <li><a href="#claim-only-harvestable-pods">Claim Only Harvestable Pods</a></li>
         </ul>
       </li>
+      <li><a href="#buy-sell-and-send-beans">Buy, Sell and Send Beans</a></li>
+        <ul>
+          <li><a href="#buy-and-sell-beans">Buy and Sell Beans</a></li>
+          <li><a href="#complex-buy-and-sell">Complex Buy and Sell</a></li>
+          <li><a href="#send-beans">Send Beans</a></li>
+        </ul>
       <li><a href="#participate-in-governance">Participate In Governance</a>
         <ul>
           <li><a href="#learn-more-about-bips">Learn More About BIPs</a></li>
@@ -113,10 +113,14 @@ function toggleImage(imageId) {
       <li><a href="#use-beans">Use Beans</a></li>
       <li><a href="#understand-beanstalk">Understand Beanstalk</a></li>
     </ul>
-    <h2 id="earn-interest-from-beanstalk-in-three-simple-steps">Earn Interest from Beanstalk in 3 Simple Steps</h2>
+    <h2 id="earn-interest-from-beanstalk-in-one-transaction">Earn Interest from Beanstalk in 1 transaction</h2>
     <p>There are multiple ways to earn interest from Beanstalk. The simplest way to earn interest is to Deposit LP Tokens directly into the Silo from Ether (ETH). More comprehensive instructions on participation can be found below.</p>
     <p>To Deposit LP Tokens directly into the Silo from ETH:</p>
     <ol>
+      <li><a href="#connect-your-metamask-wallet-to-beanstalk">Connect your Metamask Wallet</a> to <a target="_blank" href="http://bean.money">bean.money</a>.</li>
+      <li>Click the Menu icon in the top right of the website, and then navigate to the "LP" module in the "Silo" section. Menu > Silo > LP > Deposit.</li>
+      <li>Enter the desired ETH Deposit amount and click "Deposit". Confirm your transaction with Metamask.</li>
+    </ol>
     <h2 id="connect-to-beanstalk">Connect To Beanstalk</h2>
     <p>In addition to an internet connection, interacting with Beanstalk requires:</p>
     <ul>
@@ -136,7 +140,7 @@ function toggleImage(imageId) {
       </li>
       <li>Follow the instructions to set up your Metamask Wallet. Be sure to save your Secret Recovery Phrase somewhere safe!</li>
     </ol>
-    <h4 id="fund-your-metamask-wallet-with-ether-eth">3. Fund Your Metamask Wallet with ETH</h4>
+    <h4 id="fund-your-metamask-wallet-with-ether-eth">2. Fund Your Metamask Wallet with ETH</h4>
     <ol>
       <li>
         Copy your Metamask Ethereum wallet address.
@@ -145,10 +149,10 @@ function toggleImage(imageId) {
       </li>
       <li>Send your ETH to your Metamask wallet address from your current ETH wallet.</li>
     </ol>
-    <h4 id="connect-your-metamask-wallet-to-beanstalk">4. Connect Your Metamask Wallet to Beanstalk</h4>
+    <h4 id="connect-your-metamask-wallet-to-beanstalk">3. Connect Your Metamask Wallet to Beanstalk</h4>
     <ol>
       <li>
-        In the Metamask app, click the 3 bars in the top left hand corner.
+        In the Metamask app, click the Menu icon in the top left hand corner.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('5a')">🖼</a>
         <img id="5a" name="instructional" src="../img/inst/5a.png" alt="5a" /> -->
       </li>
@@ -169,82 +173,6 @@ function toggleImage(imageId) {
         <img id="5a" name="instructional" src="../img/inst/5a.png" alt="5a" /> -->
       </li>
     </ol>
-    <h2 id="buy-sell-and-send-beans">Buy, Sell and Send Beans</h2>
-    <p>The Beanstalk website facilitates simple, fee-efficient usage of Beanstalk. Beans can be easily bought, sold and sent in the "Trade" module.</p>
-    <p>PLEASE NOTE: Beans can be bought and Deposited or bought and Sown directly from ETH in a single transaction by using the "Silo" and "Field" modules, respectively (see <a href="#earn-interest-on-beans">Earn Interest on Beans</a>).</p>
-    <ul>
-      <li><a href="#buy-and-sell-beans">Buy and Sell Beans</a></li>
-      <li><a href="#complex-buy-and-sell">Complex Buy and Sell</a></li>
-      <li><a href="#send-beans">Send Beans</a></li>
-    </ul>
-    <h4 id="buy-and-sell-beans">Buy and Sell Beans:</h4>
-    <ol>
-      <li>
-        Click the 3 lines in the top right of the website, and then click "Trade".
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('6a')">🖼</a>
-        <img id="6a" name="instructional" src="../img/inst/6a.png" alt="6a" /> -->
-      </li>
-      <li>
-        Click the "Swap" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('6b')">🖼</a>
-        <img id="6b" name="instructional" src="../img/inst/6b.png" alt="6b" /> -->
-      </li>
-      <li>
-        Click the middle icon to toggle between buying and selling Beans. The asset on the top is being sold; the asset on the bottom is being bought.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('6c')">🖼</a>
-        <img id="6c" name="instructional" src="../img/inst/6c.png" alt="6c" /> -->
-      </li>
-      <li>
-        Input the desired amount of ETH or Beans to buy or sell in either field. The website will automatically display the number of Beans or ETH required or received for your transaction based on your input.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('6d')">🖼</a>
-        <img id="6d" name="instructional" src="../img/inst/6d.png" alt="6d" /> -->
-      </li>
-      <li>
-        Click "Swap."
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('6e')">🖼</a>
-        <img id="6e" name="instructional" src="../img/inst/6e.png" alt="6e" /> -->
-      </li>
-      <li>
-        Click "Confirm" on the transaction when prompted by Metamask.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('6f')">🖼</a>
-        <img id="6f" name="instructional" src="../img/inst/6f.png" alt="6f" /> -->
-      </li>
-    </ol>
-    <h4 id="complex-buy-and-sell">Complex Buy and Sell:</h4>
-    <p>If you click the "Settings" button, an additional "Slippage" option will appear. The "Slippage" option allows you to customize the maximum difference between the current price and the price at which your transaction executes. For more information, click <a href="https://coinmarketcap.com/alexandria/glossary/slippage">here</a>.</p>
-    <h4 id="send-beans">Send Beans:</h4>
-    <ol>
-      <li>
-        Click the 3 lines in the top right of the website, and then click "Trade".
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('7a')">🖼</a>
-        <img id="7a" name="instructional" src="../img/inst/7a.png" alt="7a" /> -->
-      </li>
-      <li>
-        Click the "Send" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('7b')">🖼</a>
-        <img id="7b" name="instructional" src="../img/inst/7b.png" alt="7b" /> -->
-      </li>
-      <li>
-        Paste the desired recipient address for your Bean transfer.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('7c')">🖼</a>
-        <img id="7c" name="instructional" src="../img/inst/7c.png" alt="7c" /> -->
-      </li>
-      <li>
-        Input the desired number of Beans to transfer.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('7d')">🖼</a>
-        <img id="7d" name="instructional" src="../img/inst/7d.png" alt="7d" /> -->
-      </li>
-      <li>
-        Click "Send."
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('7e')">🖼</a>
-        <img id="7e" name="instructional" src="../img/inst/7e.png" alt="7e" /> -->
-      </li>
-      <li>
-        Click "Confirm" on the transaction when prompted by Metamask.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('7f')">🖼</a>
-        <img id="7f" name="instructional" src="../img/inst/7f.png" alt="7f" /> -->
-      </li>
-    </ol>
     <h2 id="earn-interest-on-beans">Earn Interest on Beans</h2>
     <p>There are 2 ways to earn interest directly from Beanstalk:</p>
     <ul>
@@ -253,66 +181,25 @@ function toggleImage(imageId) {
     </ul>
     <p>The Beanstalk website facilitates Buying and Depositing directly from ETH, Claiming and Depositing, and Buying and Sowing directly from ETH, in single transactions. Users can also Buy and Deposit LP Tokens directly from Beans. In each module, there is a "Settings" button that lets you customize your transaction.</p>
     <h3 id="become-a-silo-member">Become a Silo Member</h3>
-    <p>Anyone can become a Silo Member by Depositing Beans or LP Tokens for the Bean:ETH Uniswap liquidity pool into the Silo. Upon Deposit, Silo Members receive Stalk and Seeds. Stalk is the governance token of Beanstalk. Every season, each Seed yields .0001 additional Stalk.</p>
+    <p>Anyone can become a Silo Member by Depositing Beans or LP Tokens for the Bean:ETH Uniswap liquidity pool into the Silo. Upon Deposit, Silo Members receive Stalk and Seeds. Stalk is the governance token of Beanstalk. Every season, .0001 additional Stalk Grows from each Seed.</p>
     <p>At the beginning of each Season, if the Bean supply increases, a portion of the new Bean supply is distributed to Stalk holders in proportion to their Stalk ownership. All Bean distributions to Silo Members are automatically Deposited into the Silo, and receive Stalk and Seeds.</p>
-    <p>Stalk that grow from Seeds owned at the time of your last Silo interaction (Depositing, Withdrawing, Farming) must be manually Farmed to begin earning interest.</p>
+    <p>Stalk that Grow from Seeds owned at the time of your last Silo interaction (Depositing, Withdrawing, Farming) must be manually Farmed to begin earning interest.</p>
     <p>Assets can be Withdrawn from the Silo at anytime, and become liquid at the start of the 25th Season after Withdrawal. All Stalk and Seeds associated with a Deposit are forfeited upon Withdrawal.</p>
     <ul>
-      <li><a href="#deposit-beans">Deposit Beans</a></li>
-      <li><a href="#complex-bean-deposit">Complex Bean Deposit</a></li>
       <li><a href="#deposit-lp-tokens">Deposit LP Tokens</a></li>
       <li><a href="#complex-lp-token-deposit">Complex LP Token Deposit</a></li>
+      <li><a href="#deposit-beans">Deposit Beans</a></li>
+      <li><a href="#complex-bean-deposit">Complex Bean Deposit</a></li>
     </ul>
-    <h4 id="deposit-beans">Deposit Beans</h4>
-    <ol>
-      <li>
-        Click the 3 lines in the top right of the website, and then click "Silo".
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('8a')">🖼</a>
-        <img id="8a" name="instructional" src="../img/inst/8a.png" alt="8a" /> -->
-      </li>
-      <li>
-        Under the "Bean" module, click the "Deposit" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('8b')">🖼</a>
-        <img id="8b" name="instructional" src="../img/inst/8b.png" alt="8b" /> -->
-      </li>
-      <li>
-        Enter the desired Bean Deposit amount. The website will automatically display the number of Stalk and Seeds received for your Deposit.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('8b')">🖼</a>
-        <img id="8b" name="instructional" src="../img/inst/8b.png" alt="8b" /> -->
-      </li>
-      <li>
-        Click "Deposit."
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('8c')">🖼</a>
-        <img id="8c" name="instructional" src="../img/inst/8c.png" alt="8c" /> -->
-      </li>
-      <li>
-        Click "Confirm" on the transaction when prompted by Metamask.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('8d')">🖼</a>
-        <img id="8d" name="instructional" src="../img/inst/8d.png" alt="8d" /> -->
-      </li>
-    </ol>
-    <h4 id="complex-bean-deposit">Complex Bean Deposit</h4>
-    <p>If you click the "Settings" button, additional options to customize your Bean Deposit will pop up:</p>
-    <ol type="a">
-      <li><b>ETH:</b> If you select the ETH logo, you can input the number of ETH you want to use to buy and Deposit Beans.</li>
-      <li><b>Bean + ETH:</b> If you select the Bean and ETH logos, you can both Deposit Beans you already have in your wallet (or are Claiming), and input the number of ETH you want to use to buy and Deposit additional Beans.</li>
-      <li><b>Claim:</b> If you have any Claimable assets, there will be an option to "Claim." If you toggle "Claim" on, you will Claim any Harvestable Pods and Claimable Withdrawals, and be able to Deposit the proceeds.</li>
-      <li><b>Slippage:</b> If you are buying Beans with ETH, the "Slippage" option allows you to customize the maximum difference between the current price and the price at which your transaction executes. For more information, click <a href="https://coinmarketcap.com/alexandria/glossary/slippage">here</a>.</li>
-    </ol>
     <h4 id="deposit-lp-tokens">Deposit LP Tokens</h4>
     <ol>
       <li>
-        Click the 3 lines in the top right of the website, and then click "Silo".
+        Click the Menu icon in the top right of the website, and then navigate to the "LP" module in the "Silo" section. Menu > Silo > LP > Deposit.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('9a')">🖼</a>
         <img id="9a" name="instructional" src="../img/inst/9a.png" alt="9a" /> -->
       </li>
       <li>
-        Under the "LP" module, click the "Deposit" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('9b')">🖼</a>
-        <img id="9b" name="instructional" src="../img/inst/9b.png" alt="9b" /> -->
-      </li>
-      <li>
-        Enter the desired LP Deposit amount. The website will automatically display the number of Stalk and Seeds received for your Deposit.
+        Enter the desired LP Deposit amount. The website will automatically display the number of Stalk and Seeds minted for your Deposit.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('9c')">🖼</a>
         <img id="9c" name="instructional" src="../img/inst/9c.png" alt="9c" /> -->
       </li>
@@ -338,6 +225,37 @@ function toggleImage(imageId) {
       <li><b>Use LP:</b> If you selected any of the logos besides the LP logo and have circulating LP Tokens, an additional toggle "Use LP" will appear, which allows you to Deposit LP in conjunction with your more complex Deposit.</li>
       <li><b>Slippage:</b> If you are buying Beans with ETH, the "Slippage" option allows you to customize the maximum difference between the current price and the price at which your transaction executes. For more information, click <a href="https://coinmarketcap.com/alexandria/glossary/slippage">here</a>.</li>
     </ol>
+    <h4 id="deposit-beans">Deposit Beans</h4>
+    <ol>
+      <li>
+        Click the Menu icon in the top right of the website, and then navigate to the "Bean" module in the "Silo" section. Menu > Silo > Bean > Deposit.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('8a')">🖼</a>
+        <img id="8a" name="instructional" src="../img/inst/8a.png" alt="8a" /> -->
+      </li>
+      <li>
+        Enter the desired Bean Deposit amount. The website will automatically display the number of Stalk and Seeds minted for your Deposit.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('8b')">🖼</a>
+        <img id="8b" name="instructional" src="../img/inst/8b.png" alt="8b" /> -->
+      </li>
+      <li>
+        Click "Deposit."
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('8c')">🖼</a>
+        <img id="8c" name="instructional" src="../img/inst/8c.png" alt="8c" /> -->
+      </li>
+      <li>
+        Click "Confirm" on the transaction when prompted by Metamask.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('8d')">🖼</a>
+        <img id="8d" name="instructional" src="../img/inst/8d.png" alt="8d" /> -->
+      </li>
+    </ol>
+    <h4 id="complex-bean-deposit">Complex Bean Deposit</h4>
+    <p>If you click the "Settings" button, additional options to customize your Bean Deposit will pop up:</p>
+    <ol type="a">
+      <li><b>ETH:</b> If you select the ETH logo, you can input the number of ETH you want to use to buy and Deposit Beans.</li>
+      <li><b>Bean + ETH:</b> If you select the Bean and ETH logos, you can both Deposit Beans you already have in your wallet (or are Claiming), and input the number of ETH you want to use to buy and Deposit additional Beans.</li>
+      <li><b>Claim:</b> If you have any Claimable assets, there will be an option to "Claim." If you toggle "Claim" on, you will Claim any Harvestable Pods and Claimable Withdrawals, and be able to Deposit the proceeds.</li>
+      <li><b>Slippage:</b> If you are buying Beans with ETH, the "Slippage" option allows you to customize the maximum difference between the current price and the price at which your transaction executes. For more information, click <a href="https://coinmarketcap.com/alexandria/glossary/slippage">here</a>.</li>
+    </ol>
     <h3 id="become-a-bean-farmer">Become a Bean Farmer</h3>
     <p>Anyone can become a Bean Farmer by Sowing Beans in Soil (lending Beans to Beanstalk). Anytime there is Soil in the Field, Beanstalk is willing to issue Pods (debt). The interest rate on Bean loans is determined by the Weather at the time of Sowing. Pods become Harvestable (redeemable for 1 Bean) on a First In, First Out basis.</p>
     <ul>
@@ -347,17 +265,12 @@ function toggleImage(imageId) {
     <h4 id="sow-beans">Sow Beans</h4>
     <ol>
       <li>
-        Click the 3 lines in the top right of the website, and then click "Field".
+        Click the Menu icon in the top right of the website, and then navigate to the "Sow" module in the "Field" section. Menu > Field > Sow.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('10a')">🖼</a>
         <img id="10a" name="instructional" src="../img/inst/10a.png" alt="10a" /> -->
       </li>
       <li>
-        Click the "Sow" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('10b')">🖼</a>
-        <img id="10b" name="instructional" src="../img/inst/10b.png" alt="10b" /> -->
-      </li>
-      <li>
-        Enter the desired amount of Beans to Sow. The website will automatically display the number of Pods received from your Sow.
+        Enter the desired amount of Beans to Sow. The website will automatically display the number of Pods minted from your Sow.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('10c')">🖼</a>
         <img id="10c" name="instructional" src="../img/inst/10c.png" alt="10c" /> -->
       </li>
@@ -382,58 +295,25 @@ function toggleImage(imageId) {
     </ol>
     <h2 id="redeem-interest">Redeem Interest</h2>
     <p>Interest is paid automatically to Silo Members and Bean Farmers.</p>
-    <p>Silo Members receive interest in the form of Deposited Beans. Interest payments automatically receive Stalk and Seeds. Every season, each Seed yields .0001 additional Stalk. Stalk that grow from Seeds owned at the time of your last Silo interaction (Depositing, Withdrawing, Farming) must be manually Farmed to begin earning interest.</p>
+    <p>Silo Members receive interest in the form of Deposited Beans. Interest payments automatically receive Stalk and Seeds. Every season, .0001 additional Stalk Grows from each Seed. Stalk that Grow from Seeds owned at the time of your last Silo interaction (Depositing, Withdrawing, Farming) must be manually Farmed to begin earning interest.</p>
     <p>Silo Members can Withdraw their Beans and LP Tokens from the Silo at anytime. Bean and LP Token Withdrawals are Claimable at the start of the 25th Season after Withdrawal.</p>
-    <p>Bean Farmers receive Pods at the time of Sowing. Pods become Harvestable on a First In, First Out basis.  Bean Farmers can redeem their Harvestable Pods for 1 Bean each at any time. Bean Farmers must manually Claim Harvestable Pods.</p>
+    <p>Bean Farmers receive Pods at the time of Sowing. Pods become Harvestable on a First In, First Out basis.  Bean Farmers can redeem or Harvest their Harvestable Pods for 1 Bean each at any time. Bean Farmers must manually Claim Harvestable Pods.</p>
     <p>There is no penalty for waiting to Claim assets.</p>
     <ul>
-      <li><a href="#withdraw-beans">Withdraw Beans</a></li>
       <li><a href="#withdraw-lp-tokens">Withdraw LP Tokens</a></li>
+      <li><a href="#withdraw-beans">Withdraw Beans</a></li>
       <li><a href="#claim-all-assets">Claim All Assets</a></li>
-      <li><a href="#claim-additional-stalk">Farm Additional Stalk</a></li>
-      <li><a href="#claim-only-bean-withdrawals">Claim Only Bean Withdrawals</a></li>
+      <li><a href="#Farm-grown-stalk">Farm Grown Stalk</a></li>
       <li><a href="#claim-only-lp-token-withdrawals">Claim Only LP Token Withdrawals</a></li>
+      <li><a href="#claim-only-bean-withdrawals">Claim Only Bean Withdrawals</a></li>
       <li><a href="#claim-only-harvestable-pods">Claim Only Harvestable Pods</a></li>
     </ul>
-    <h4 id="withdraw-beans">Withdraw Beans</h4>
-    <ol>
-      <li>
-        Click the 3 lines in the top right of the website, and then click "Silo".
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('11a')">🖼</a>
-        <img id="11a" name="instructional" src="../img/inst/11a.png" alt="11a" /> -->
-      </li>
-      <li>
-        Under the "Bean" module, click the "Withdraw" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('11b')">🖼</a>
-        <img id="11b" name="instructional" src="../img/inst/11b.png" alt="11b" /> -->
-      </li>
-      <li>
-        Enter the desired Bean Withdrawal amount. The website will automatically display the number of Stalk and Seeds burned for your Withdrawal.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('11c')">🖼</a>
-        <img id="11c" name="instructional" src="../img/inst/11c.png" alt="11c" /> -->
-      </li>
-      <li>
-        Click the "Withdraw" Button.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('11d')">🖼</a>
-        <img id="11d" name="instructional" src="../img/inst/11d.png" alt="11d" /> -->
-      </li>
-      <li>
-        Click "Confirm" on the transaction when prompted by Metamask.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('11e')">🖼</a>
-        <img id="11e" name="instructional" src="../img/inst/11e.png" alt="11e" /> -->
-      </li>
-    </ol>
     <h4 id="withdraw-lp-tokens">Withdraw LP Tokens</h4>
     <ol>
       <li>
-        Click the 3 lines in the top right of the website, and then click "Silo".
+        Click the Menu icon in the top right of the website, and then navigate to the "LP" module in the "Silo" section. Menu > Silo > LP > Withdraw.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('12a')">🖼</a>
         <img id="12a" name="instructional" src="../img/inst/12a.png" alt="12a" /> -->
-      </li>
-      <li>
-        Under the "LP" module, click the "Withdraw" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('12b')">🖼</a>
-        <img id="12b" name="instructional" src="../img/inst/12b.png" alt="12b" /> -->
       </li>
       <li>
         Enter the desired LP Withdrawal amount. The website will automatically display the number of Stalk and Seeds burned for your Withdrawal.
@@ -451,9 +331,37 @@ function toggleImage(imageId) {
         <img id="12e" name="instructional" src="../img/inst/12e.png" alt="12e" /> -->
       </li>
     </ol>
-    <h4 id="claim-all-assets">Claim All Assets</h4>
-    <p>Anytime you have any Claimable assets (ETH from Seasons of Plenty, Bean Withdrawals, LP Token Withdrawals or Harvestable Pods), a "Claim" button will appear at the bottom of the My Balances tab.</p>
+    <h4 id="withdraw-beans">Withdraw Beans</h4>
     <ol>
+      <li>
+        Click the Menu icon in the top right of the website, and then navigate to the "Bean" module in the "Silo" section. Menu > Silo > Bean > Withdraw.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('11a')">🖼</a>
+        <img id="11a" name="instructional" src="../img/inst/11a.png" alt="11a" /> -->
+      </li>
+      <li>
+        Enter the desired Bean Withdrawal amount. The website will automatically display the number of Stalk and Seeds burned for your Withdrawal.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('11c')">🖼</a>
+        <img id="11c" name="instructional" src="../img/inst/11c.png" alt="11c" /> -->
+      </li>
+      <li>
+        Click the "Withdraw" Button.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('11d')">🖼</a>
+        <img id="11d" name="instructional" src="../img/inst/11d.png" alt="11d" /> -->
+      </li>
+      <li>
+        Click "Confirm" on the transaction when prompted by Metamask.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('11e')">🖼</a>
+        <img id="11e" name="instructional" src="../img/inst/11e.png" alt="11e" /> -->
+      </li>
+    </ol>
+    <h4 id="claim-all-assets">Claim All Assets</h4>
+    <p>Anytime you have any Claimable assets (ETH from Seasons of Plenty, Bean Withdrawals, LP Token Withdrawals or Harvestable Pods), a "Claim" button will appear at the bottom of the "My Balances" module.</p>
+    <ol>
+      <li>
+        Click the Menu icon in the top right of the website, and then navigate to the "My Balances" module in the "Analytics" section. Menu > Analytics > My Balances.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('13a')">🖼</a>
+        <img id="13a" name="instructional" src="../img/inst/13a.png" alt="13a" /> -->
+      </li>
       <li>
         Click the "Claim" button.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('13a')">🖼</a>
@@ -465,9 +373,14 @@ function toggleImage(imageId) {
         <img id="13b" name="instructional" src="../img/inst/13b.png" alt="13b" /> -->
       </li>
     </ol>
-    <h4 id="claim-additional-stalk">Farm Additional Stalk</h4>
-    <p>Anytime you have any Farmable Stalk, a "Farm" button will appear at the bottom of the My Balances tab.</p>
+    <h4 id="farm-grown-stalk">Farm Grown Stalk</h4>
+    <p>Anytime you have any Grown Stalk, a "Farm" button will appear at the bottom of the "My Balances" module.</p>
     <ol>
+      <li>
+        Click the Menu icon in the top right of the website, and then navigate to the "My Balances" module in the "Analytics" section. Menu > Analytics > My Balances.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('14a')">🖼</a>
+        <img id="14a" name="instructional" src="../img/inst/14a.png" alt="14a" /> -->
+      </li>
       <li>
         Click the "Farm" button.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('14a')">🖼</a>
@@ -479,42 +392,13 @@ function toggleImage(imageId) {
         <img id="14b" name="instructional" src="../img/inst/14b.png" alt="14b" /> -->
       </li>
     </ol>
-    <h4 id="claim-only-bean-withdrawals">Claim Only Bean Withdrawals</h4>
-    <p>Anytime you have Claimable Bean Withdrawals, a "Claim" tab will appear under the "Bean" module in the Silo.</p>
-    <ol>
-      <li>
-        Click the 3 lines in the top right of the website, and then click "Silo".
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('15a')">🖼</a>
-        <img id="15a" name="instructional" src="../img/inst/15a.png" alt="15a" /> -->
-      </li>
-      <li>
-        Under the "Bean" module, click the "Claim" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('15b')">🖼</a>
-        <img id="15b" name="instructional" src="../img/inst/15b.png" alt="15b" /> -->
-      </li>
-      <li>
-        Click the "Claim" button.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('15c')">🖼</a>
-        <img id="15c" name="instructional" src="../img/inst/15c.png" alt="15c" /> -->
-      </li>
-      <li>
-        Click "Confirm" on the transaction when prompted by Metamask.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('15d')">🖼</a>
-        <img id="15d" name="instructional" src="../img/inst/15d.png" alt="15d" /> -->
-      </li>
-    </ol>
     <h4 id="claim-only-lp-token-withdrawals">Claim Only LP Token Withdrawals</h4>
     <p>Anytime you have Claimable LP Token Withdrawals, a "Claim" tab will appear under the "LP" module in the Silo.</p>
     <ol>
       <li>
-        Click the 3 lines in the top right of the website, and then click "Silo".
+        Click the Menu icon in the top right of the website, and then navigate to the "LP" module in the "Silo" section. Menu > Silo > LP > Claim.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('16a')">🖼</a>
         <img id="16a" name="instructional" src="../img/inst/16a.png" alt="16a" /> -->
-      </li>
-      <li>
-        Under the "LP" module, click the "Claim" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('16b')">🖼</a>
-        <img id="16b" name="instructional" src="../img/inst/16b.png" alt="16b" /> -->
       </li>
       <li>
         Click the "Claim" button.
@@ -527,23 +411,32 @@ function toggleImage(imageId) {
         <img id="16d" name="instructional" src="../img/inst/16d.png" alt="16d" /> -->
       </li>
     </ol>
-    <h4 id="claim-only-harvestable-pods">Claim Only Harvestable Pods</h4>
-    <p>Anytime you have Harvestable Pods, a "Harvest" tab will appear in the "Field" module.</p>
+    <h4 id="claim-only-bean-withdrawals">Claim Only Bean Withdrawals</h4>
+    <p>Anytime you have Claimable Bean Withdrawals, a "Claim" tab will appear under the "Bean" module in the Silo.</p>
     <ol>
       <li>
-        Click the 3 lines in the top right of the website, and then click "Field".
+        Click the Menu icon in the top right of the website, and then navigate to the "Bean" module in the "Silo" section. Menu > Silo > Bean > Claim.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('15a')">🖼</a>
+        <img id="15a" name="instructional" src="../img/inst/15a.png" alt="15a" /> -->
+      </li>
+      <li>
+        Click the "Claim" button.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('15c')">🖼</a>
+        <img id="15c" name="instructional" src="../img/inst/15c.png" alt="15c" /> -->
+      </li>
+      <li>
+        Click "Confirm" on the transaction when prompted by Metamask.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('15d')">🖼</a>
+        <img id="15d" name="instructional" src="../img/inst/15d.png" alt="15d" /> -->
+      </li>
+    </ol>
+    <h4 id="claim-only-harvestable-pods">Claim Only Harvestable Pods</h4>
+    <p>Anytime you have Harvestable Pods, a "Harvest" module will appear in the "Field" section.</p>
+    <ol>
+      <li>
+        Click the Menu icon in the top right of the website, and then navigate to the "Harvest" module in the "Field" section. Menu > Field > Harvest.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('17a')">🖼</a>
         <img id="17a" name="instructional" src="../img/inst/17a.png" alt="17a" /> -->
-      </li>
-      <li>
-        Click the "Harvest" tab.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('17b')">🖼</a>
-        <img id="17b" name="instructional" src="../img/inst/17b.png" alt="17b" /> -->
-      </li>
-      <li>
-        Enter the desired Pod Harvest amount.
-        <!-- <a class="instructionalLink" href="javascript:toggleImage('17c')">🖼</a>
-        <img id="17c" name="instructional" src="../img/inst/17c.png" alt="17c" /> -->
       </li>
       <li>
         Click the "Harvest" button.
@@ -556,8 +449,75 @@ function toggleImage(imageId) {
         <img id="17e" name="instructional" src="../img/inst/17e.png" alt="17e" /> -->
       </li>
     </ol>
+    <h2 id="buy-sell-and-send-beans">Buy, Sell and Send Beans</h2>
+    <p>The Beanstalk website facilitates simple, fee-efficient usage of Beanstalk. Beans can be easily bought, sold and sent in the "Trade" module.</p>
+    <p>PLEASE NOTE: Beans can be bought and Deposited or bought and Sown directly from ETH in a single transaction by using the "Silo" and "Field" modules, respectively (see <a href="#earn-interest-on-beans">Earn Interest on Beans</a>).</p>
+    <ul>
+      <li><a href="#buy-and-sell-beans">Buy and Sell Beans</a></li>
+      <li><a href="#complex-buy-and-sell">Complex Buy and Sell</a></li>
+      <li><a href="#send-beans">Send Beans</a></li>
+    </ul>
+    <h4 id="buy-and-sell-beans">Buy and Sell Beans:</h4>
+    <ol>
+      <li>
+        Click the Menu icon in the top right of the website, and then navigate to the "Swap" module in the "Trade" section. Menu > Trade > Swap.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('6a')">🖼</a>
+        <img id="6a" name="instructional" src="../img/inst/6a.png" alt="6a" /> -->
+      </li>
+      <li>
+        Click the middle arrow icon to toggle between buying and selling Beans. The asset on the top is being sold; the asset on the bottom is being bought.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('6c')">🖼</a>
+        <img id="6c" name="instructional" src="../img/inst/6c.png" alt="6c" /> -->
+      </li>
+      <li>
+        Input the desired amount of ETH or Beans to buy or sell in either field. The website will automatically display the number of Beans or ETH required or received for your transaction based on your input.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('6d')">🖼</a>
+        <img id="6d" name="instructional" src="../img/inst/6d.png" alt="6d" /> -->
+      </li>
+      <li>
+        Click "Swap."
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('6e')">🖼</a>
+        <img id="6e" name="instructional" src="../img/inst/6e.png" alt="6e" /> -->
+      </li>
+      <li>
+        Click "Confirm" on the transaction when prompted by Metamask.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('6f')">🖼</a>
+        <img id="6f" name="instructional" src="../img/inst/6f.png" alt="6f" /> -->
+      </li>
+    </ol>
+    <h4 id="complex-buy-and-sell">Complex Buy and Sell:</h4>
+    <p>If you click the "Settings" button, an additional "Slippage" option will appear. The "Slippage" option allows you to customize the maximum difference between the current price and the price at which your transaction executes. For more information, click <a href="https://coinmarketcap.com/alexandria/glossary/slippage">here</a>.</p>
+    <h4 id="send-beans">Send Beans:</h4>
+    <ol>
+      <li>
+        Click the Menu icon in the top right of the website, and then navigate to the "Send" module in the "Trade" section. Menu > Trade > Send.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('7a')">🖼</a>
+        <img id="7a" name="instructional" src="../img/inst/7a.png" alt="7a" /> -->
+      </li>
+      <li>
+        Paste the desired recipient address for your Bean transfer.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('7c')">🖼</a>
+        <img id="7c" name="instructional" src="../img/inst/7c.png" alt="7c" /> -->
+      </li>
+      <li>
+        Input the desired number of Beans to transfer.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('7d')">🖼</a>
+        <img id="7d" name="instructional" src="../img/inst/7d.png" alt="7d" /> -->
+      </li>
+      <li>
+        Click "Send."
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('7e')">🖼</a>
+        <img id="7e" name="instructional" src="../img/inst/7e.png" alt="7e" /> -->
+      </li>
+      <li>
+        Click "Confirm" on the transaction when prompted by Metamask.
+        <!-- <a class="instructionalLink" href="javascript:toggleImage('7f')">🖼</a>
+        <img id="7f" name="instructional" src="../img/inst/7f.png" alt="7f" /> -->
+      </li>
+    </ol>
     <h2 id="participate-in-governance">Participate in Governance</h2>
-    <p>Beanstalk is governed by Stalk holders. Anytime there is an outstanding Beanstalk Improvement Proposal (BIP) being considered, a "BIPs" button will appear in the navigation bar if you click the 3 lines in the top right of the website. When there are no outstanding BIPs, you can still review previous BIPs by scrolling down to the "BIPs" section of the website.</p>
+    <p>Beanstalk is governed by Stalk holders. Anyone with Stalk can vote for Beanstalk Improvement Proposals (BIPs).</p>
+    <p>PLEASE NOTE: Anytime there is an outstanding BIP being considered, a "BIPs" button will appear in the Menu icon in the top right of the website. When there are no outstanding BIPs, you can still review previous BIPs by scrolling down to the "BIPs" section of the website.</p>
     <ul>
       <li><a href="#learn-more-about-bips">Learn More About BIPs</a></li>
       <li><a href="#vote-for-a-bip">Vote For a BIP</a></li>
@@ -581,17 +541,17 @@ function toggleImage(imageId) {
     <h4 id="vote-for-a-bip">Vote For a BIP</h4>
     <ol>
       <li>
-        Click the 3 lines in the top right of the website, and then click "BIPs".
+        Click the Menu icon in the top right of the website, and then navigate to the "Active BIPs" module in the "BIPs" section. Menu > BIPs > Active BIPs.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('19a')">🖼</a>
         <img id="19a" name="instructional" src="../img/inst/19a.png" alt="19a" /> -->
       </li>
       <li>
-        Under the "Active BIPs" module, click on the BIP you wish to vote for.
+        Click on the BIP you wish to vote for.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('19b')">🖼</a>
         <img id="19b" name="instructional" src="../img/inst/19b.png" alt="19b" /> -->
       </li>
       <li>
-        Click "Vote For BIP" button.
+        Click the "Vote For BIP" button.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('19c')">🖼</a>
         <img id="19c" name="instructional" src="../img/inst/19c.png" alt="19c" /> -->
       </li>
@@ -604,12 +564,12 @@ function toggleImage(imageId) {
     <h4 id="unvote-for-a-bip">Unvote For a BIP</h4>
     <ol>
       <li>
-        Click the 3 lines in the top right of the website, and then click "BIPs".
+        Click the Menu icon in the top right of the website, and then navigate to the "Active BIPs" module in the "BIPs" section. Menu > BIPs > Active BIPs.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('20a')">🖼</a>
         <img id="20a" name="instructional" src="../img/inst/20a.png" alt="20a" /> -->
       </li>
       <li>
-        Under the "Active BIPs" module, click on the BIP you wish to unvote for.
+        Click on the BIP you wish to unvote for.
         <!-- <a class="instructionalLink" href="javascript:toggleImage('20b')">🖼</a>
         <img id="20b" name="instructional" src="../img/inst/20b.png" alt="20b" /> -->
       </li>
@@ -648,13 +608,13 @@ function toggleImage(imageId) {
       </li>
     </ol>
     <h2 id="understand-my-holdings-in-beanstalk">Understand My Holdings in Beanstalk</h2>
-    <p>There are many different assets in the Beanstalk ecosystem. The Balances section contains a complete summary of both your assets in the ecosystem, and the totals for the entire Beanstalk ecosystem.</p>
-    <p>Bean values are denominated in Beans. LP Token values are small decimals. If you hover over an amount of LP with your mouse, the website displays the Beans and ETH under that LP Token amount.</p>
-    <p>Bean and LP Deposits and Withdrawals are listed individually in the "Silo" section.</p>
-    <p>Whenever you have assets Deposited in the Silo and are rewarded with new Beans or Stalk, they will appear with your Bean Deposits listed as Rewarded. The next time you perform a transaction in the Silo, Rewarded Beans and Stalk will be grouped into a Bean Deposit and removed from the Rewarded section.</p>
+    <p>There are many different assets in the Beanstalk ecosystem. The Balances section contains a complete summary of both your assets in the ecosystem, and the totals for the entire Beanstalk ecosystem. Menu > Analytics > Balances.</p>
+    <p>You can also click on your address in the top right of the website to view your Beanstalk balances in the "My Balances" tab.</p>
+    <p>Bean values are denominated in Beans. LP Token values are small decimals. If you click on an amount of LP, the website displays the Beans and ETH under that LP Token amount.</p>
+    <p>Bean and LP Deposits and Withdrawals are listed individually in the "Silo" section. The table will show when you click on the list menu dropdown in the bottom left of the module.</p>
+    <p>PLEASE NOTE: Whenever you have assets Deposited in the Silo and are rewarded with new Beans or Stalk, they will appear with your Bean Deposits listed as Farmable. The next time you perform a transaction in the Silo, Farmable Beans and Stalk will be grouped into a Bean Deposit and removed from the Farmable season row.</p>
     <h2 id="understand-my-beanstalk-transactions">Understand My Beanstalk Transactions</h2>
-    <p>If you click your address in the top right of the website, a you can view all your transactions in Beanstalk under the "Transactions" tab. You can select from the subtabs to filter by transaction type.</p>
-    <p>You can also select the "My Balances" tab to view your Beanstalk balances.</p>
+    <p>If you click your address in the top right of the website, you can view all your transactions in Beanstalk under the "Transactions" tab. You can select from the subtabs to filter by transaction type.</p>
     <h2 id="use-beans">Use Beans</h2>
     <p>Beanstalk is designed to interoperate with the entire Ethereum ecosystem. No actions are ever required from everyday Bean users. Over time, as Beanstalk demonstrates utility by consistently crossing the Bean price over $1, we expect Beans to be incorporated into various other Ethereum-native protocols. Let your favorite dApps know you want them to incorporate Beans in their protocol!</p>
     <p>Today, you can use your Beans to participate in Bean Farming and Beanstalk Governance.</p>

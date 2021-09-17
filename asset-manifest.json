@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.13258a19.chunk.css",
-    "main.js": "/static/js/main.db22f90f.chunk.js",
-    "main.js.map": "/static/js/main.db22f90f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.656256e7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.656256e7.js.map",
-    "static/js/2.53f77806.chunk.js": "/static/js/2.53f77806.chunk.js",
-    "static/js/2.53f77806.chunk.js.map": "/static/js/2.53f77806.chunk.js.map",
-    "static/js/3.c760df16.chunk.js": "/static/js/3.c760df16.chunk.js",
-    "static/js/3.c760df16.chunk.js.map": "/static/js/3.c760df16.chunk.js.map",
+    "main.css": "/static/css/main.50caca59.chunk.css",
+    "main.js": "/static/js/main.68f2f21b.chunk.js",
+    "main.js.map": "/static/js/main.68f2f21b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2c66b989.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2c66b989.js.map",
+    "static/js/2.cf19bc73.chunk.js": "/static/js/2.cf19bc73.chunk.js",
+    "static/js/2.cf19bc73.chunk.js.map": "/static/js/2.cf19bc73.chunk.js.map",
+    "static/js/3.2139d8ae.chunk.js": "/static/js/3.2139d8ae.chunk.js",
+    "static/js/3.2139d8ae.chunk.js.map": "/static/js/3.2139d8ae.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.13258a19.chunk.css.map": "/static/css/main.13258a19.chunk.css.map",
-    "static/js/2.53f77806.chunk.js.LICENSE.txt": "/static/js/2.53f77806.chunk.js.LICENSE.txt",
+    "static/css/main.50caca59.chunk.css.map": "/static/css/main.50caca59.chunk.css.map",
+    "static/js/2.cf19bc73.chunk.js.LICENSE.txt": "/static/js/2.cf19bc73.chunk.js.LICENSE.txt",
     "static/media/Barn.d81a776e.svg": "/static/media/Barn.d81a776e.svg",
     "static/media/index.css": "/static/media/LucidaConsoleRegular.c52c29b6.ttf",
+    "static/media/Silo.ab8a9ff6.svg": "/static/media/Silo.ab8a9ff6.svg",
     "static/media/Sun.e02a1495.svg": "/static/media/Sun.e02a1495.svg",
     "static/media/bean-eth-logo.3f800aef.svg": "/static/media/bean-eth-logo.3f800aef.svg",
     "static/media/bean-eth-swap-logo.bdf29328.svg": "/static/media/bean-eth-swap-logo.bdf29328.svg",
@@ -25,6 +26,7 @@
     "static/media/eth-logo.b1d3f1e9.svg": "/static/media/eth-logo.b1d3f1e9.svg",
     "static/media/etherscan-logo.47cb90f5.svg": "/static/media/etherscan-logo.47cb90f5.svg",
     "static/media/lp-logo.a7d6c1ec.svg": "/static/media/lp-logo.a7d6c1ec.svg",
+    "static/media/medium-icon.1f9f83b0.svg": "/static/media/medium-icon.1f9f83b0.svg",
     "static/media/pod-logo.f3120cbd.svg": "/static/media/pod-logo.f3120cbd.svg",
     "static/media/seed-logo.fe1c2c85.svg": "/static/media/seed-logo.fe1c2c85.svg",
     "static/media/silo-icon.9e5b4cff.svg": "/static/media/silo-icon.9e5b4cff.svg",
@@ -34,9 +36,9 @@
     "static/media/uniswap-logo-black.c0d9a55f.svg": "/static/media/uniswap-logo-black.c0d9a55f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.656256e7.js",
-    "static/js/2.53f77806.chunk.js",
-    "static/css/main.13258a19.chunk.css",
-    "static/js/main.db22f90f.chunk.js"
+    "static/js/runtime-main.2c66b989.js",
+    "static/js/2.cf19bc73.chunk.js",
+    "static/css/main.50caca59.chunk.css",
+    "static/js/main.68f2f21b.chunk.js"
   ]
 }
