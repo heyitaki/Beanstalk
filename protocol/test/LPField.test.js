@@ -18,7 +18,8 @@ describe('LPField Test', function () {
     this.season = await ethers.getContractAt('MockSeasonFacet', this.diamond.address)
     this.claim = await ethers.getContractAt('MockClaimFacet', this.diamond.address)
     this.silo = await ethers.getContractAt('MockSiloFacet', this.diamond.address)
-    this.field = await ethers.getContractAt('MockLPFieldFacet', this.diamond.address)
+    this.field = await ethers.getContractAt('MockFieldFacet', this.diamond.address)
+    this.lpfield = await ethers.getContractAt('MockLPFieldFacet', this.diamond.address)
     this.pair = await ethers.getContractAt('MockUniswapV2Pair', contracts.pair)
     this.pegPair = await ethers.getContractAt('MockUniswapV2Pair', contracts.pegPair)
     this.bean = await ethers.getContractAt('MockToken', contracts.bean)
@@ -34,7 +35,10 @@ describe('LPField Test', function () {
     await this.bean.connect(user).approve(this.silo.address, '100000000000')
     await this.bean.connect(user2).approve(this.silo.address, '100000000000')
     await this.pair.faucet(userAddress, '100');
-    await this.pair.set('100000', '100','1');
+
+    // Setting Bean/Eth and USDC/ETHUSDC Pools
+    await this.pair.set('100000', '100','10');
+    await this.pegPair.set('100000', '100','10');
 
     await user.sendTransaction({
         to: this.weth.address,
@@ -50,31 +54,40 @@ describe('LPField Test', function () {
     await this.season.siloSunrise(0)
   });
 
-  describe('claimBeans', function () {
+  describe('sow Lps', function () {
+    beforeEach(async function () {
+      await this.field.setFieldAmountsE('1000000', '0', '0')
+      const lpTokens = await this.pair.balanceOf(userAddress)
+      this.result = await this.lpfield.connect(user).sowLP('1');
+      const newLpTokens = await this.pair.balanceOf(userAddress)
+      this.sownLps = lpTokens.sub(newLpTokens)
+    });
+
+    it('properly sows beans', async function () {
+      expect(this.sownLps.toString()).to.equal('1');
+    });
+
+    it('properly allocates beans', async function () {
+      expect(this.result).to.emit(this.lpfield, 'AddPOL').withArgs(userAddress, 'ETH/BEAN', '1');
+    });
+  })
+
+  describe('claimLps', function () {
     beforeEach(async function () {
       await this.silo.connect(user).depositBeans('1000')
       await this.silo.connect(user).depositLP('1')
-      await this.field.setFieldAmountsE('5000', '0', '0')
+      await this.field.setFieldAmountsE('1000000', '0', '0')
       await this.field.incrementTotalHarvestableE('1000')
       await this.silo.connect(user).withdrawBeans([2],['1000'])
-      await this.silo.connect(user).withdrawLP([2],['1'])
+      await this.silo.connect(user).withdrawLP([2],['5'])
       await this.season.farmSunrises('25')
     });
-
-    describe('properly sowsLP', function () {      
-      beforeEach(async function () {
-        this.result = await this.field.connect(user).sowLP('1');
-      });
-
-      it('properly allocates beans', async function () {
-        expect(this.result).to.emit(this.field, 'AddPOL').withArgs(userAddress, 'ETH/BEAN', '1000');
-      });
-    })
 
     describe('claim and sow LP', function () {
       beforeEach(async function () {
         const beans = await this.bean.balanceOf(userAddress)
-        this.result = await this.field.connect(user).claimAndSowLP('1000', [['27'],[],[],false,true,'0','0'])
+        // Convert LP flag enabled
+        this.result = await this.lpfield.connect(user).claimAndSowLP('1', [[],['1'],[],false,true,'0','0'])
         const newBeans = await this.bean.balanceOf(userAddress)
         this.claimedBeans = newBeans.sub(beans)
       });
@@ -87,10 +100,10 @@ describe('LPField Test', function () {
       });
     });
 
-    describe('claim, buy and sow Beans', function () {
+    describe('claim, buy and sow LP, exact allocation', function () {
       beforeEach(async function () {
         const beans = await this.bean.balanceOf(userAddress)
-        this.result = await this.field.connect(user).claimAddAndSowLP('1', '8000', '2', ['5000', '4000', '1'], [['27'],[],[],false,true,'0','0'])
+        this.result = await this.lpfield.connect(user).claimAddAndSowLP('1', '8000', '2', ['5000', '4000', '1'], [['27'],[],[],false,true,'0','0'])
         const newBeans = await this.bean.balanceOf(userAddress)
         this.claimedBeans = newBeans.sub(beans)
       });
@@ -103,34 +116,7 @@ describe('LPField Test', function () {
       });
     });
 
-    describe('claim and deposit LP', function () {
-      beforeEach(async function () {
-        const beans = await this.bean.balanceOf(userAddress)
-        this.silo.connect(user).claimAndDepositLP('1',[['27'],[],[],false,true,'0','0']);
-        const newBeans = await this.bean.balanceOf(userAddress)
-        this.claimedBeans = newBeans.sub(beans)
-      });
-      it('properly claims beans', async function () {
-        expect(this.claimedBeans.toString()).to.equal('1000');
-      });
-    });
-
-    describe('claim add and deposit LP, exact allocation', function () {
-      beforeEach(async function () {
-        const beans = await this.bean.balanceOf(userAddress)
-        this.result = this.silo.connect(user).claimAddAndDepositLP('0','0','0', ['1000','1000','1'],[['27'],[],[],false,true,'0','0'], {value: '1'});
-        const newBeans = await this.bean.balanceOf(userAddress)
-        this.claimedBeans = newBeans.sub(beans)
-      });
-      it('properly claims beans', async function () {
-        expect(this.claimedBeans.toString()).to.equal('0');
-      });
-      it('properly allocates beans', async function () {
-        expect(this.result).to.emit(this.claim, 'BeanAllocation').withArgs(userAddress, '1000');
-      });
-    });
-
-    describe('claim add and deposit LP, over allocation', function () {
+    describe('claim, buy and sow LP, over allocation', function () {
       beforeEach(async function () {
         const beans = await this.bean.balanceOf(userAddress)
         this.result = this.silo.connect(user).claimAddAndDepositLP('0','0','0', ['1000','1000','1'],[['27'],[],['0'],false,true,'0','0'], {value: '1'});
@@ -145,7 +131,7 @@ describe('LPField Test', function () {
       });
     });
 
-    describe('claim add and deposit LP, under allocation', function () {
+    describe('claim, buy and sow LP, under allocation', function () {
       beforeEach(async function () {
         const beans = await this.bean.balanceOf(userAddress)
         this.result = this.silo.connect(user).claimAddAndDepositLP('0','0','0', ['2000','2000','2'],[['27'],[],[],false,true,'0','0'], {value: '2'});
@@ -160,10 +146,10 @@ describe('LPField Test', function () {
       });
     });
 
-    describe('claim add buy Beans and deposit LP, exact allocation', function () {
+    describe('add and sow LP, exact allocation', function () {
       beforeEach(async function () {
         const beans = await this.bean.balanceOf(userAddress)
-        this.result = this.silo.connect(user).claimAddAndDepositLP('0','1000','0', ['2000','2000','2'],[['27'],[],[],false,true,'0','0'], {value: '4'});
+        this.result = this.silo.connect(user).claimAddAndDepositLP('0','0','0', ['1000','1000','1'],[['27'],[],[],false,true,'0','0'], {value: '1'});
         const newBeans = await this.bean.balanceOf(userAddress)
         this.claimedBeans = newBeans.sub(beans)
       });
@@ -175,19 +161,5 @@ describe('LPField Test', function () {
       });
     });
 
-    describe('claim add buy ETH and deposit LP, exact allocation', function () {
-      beforeEach(async function () {
-        const beans = await this.bean.balanceOf(userAddress)
-        this.result = this.silo.connect(user).claimAddAndDepositLP('0','0','1',['2000','2000','2'],[['27'],[],['0'],false,true,'0','0'], {value: '1'});
-        const newBeans = await this.bean.balanceOf(userAddress)
-        this.claimedBeans = newBeans.sub(beans)
-      });
-      it('properly claims beans', async function () {
-        expect(this.claimedBeans.toString()).to.equal('-1011');
-      });
-      it('properly allocates beans', async function () {
-        expect(this.result).to.emit(this.claim, 'BeanAllocation').withArgs(userAddress, '2000');
-      });
-    });
   });
 });
