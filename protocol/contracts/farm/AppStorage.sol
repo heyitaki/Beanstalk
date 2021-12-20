@@ -56,6 +56,7 @@ contract Storage {
         address pair;
         address pegPair;
         address weth;
+        address husk;
     }
 
     // Field

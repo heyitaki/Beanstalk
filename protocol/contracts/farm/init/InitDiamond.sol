@@ -15,10 +15,12 @@ import {LibMarket} from "../../libraries/LibMarket.sol";
 import "../../C.sol";
 import "../../interfaces/IBean.sol";
 import "../../interfaces/IWETH.sol";
+import "../../interfaces/IHusk.sol";
 import "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol";
 import "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol";
 import "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 import "../../Bean.sol";
+import "../../Husk.sol";
 import "../../mocks/MockToken.sol";
 
 /**
@@ -47,10 +49,12 @@ contract InitDiamond {
         s.c.weth = IUniswapV2Router02(UNISWAP_ROUTER).WETH();
         s.c.pair = address(IUniswapV2Factory(UNISWAP_FACTORY).createPair(s.c.bean, s.c.weth));
         s.c.pegPair = PEG_PAIR;
+        s.c.husk = address(new Husk());
 
         IBean(s.c.bean).approve(UNISWAP_ROUTER, uint256(-1));
         IUniswapV2Pair(s.c.pair).approve(UNISWAP_ROUTER, uint256(-1));
         IWETH(s.c.weth).approve(UNISWAP_ROUTER, uint256(-1));
+        IHusk(s.c.husk).approve(UNISWAP_ROUTER, uint256(-1));
 
         s.cases = [int8(3),1,0,0,-1,-3,-3,0,3,1,0,0,-1,-3,-3,0,3,3,1,0,0,0,-1,0,3,3,1,0,1,0,-1,0];
         s.w.yield = 1;
