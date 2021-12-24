@@ -14,7 +14,7 @@ Beanstalk provides an innovative model for an algorithmic stablecoin, whereby ne
 Just as wETH is a wrapper atop ETH to make it ERC-20 compliant, we propose creating a wPOD ERC-20 token which abstracts away the non-fungible nature of Pods when wrapping and unwrapping. As long as we can price Pods properly, each Plot can effectively be represented by some number of fungible tokens that hold the same value.
 
 ### Pod pricing function
-![P_{wPOD}(n)=\frac{P_{BEAN}}{W^{\frac{S_{wPOD}}{n}}}]()
+![P_{wPOD}(n)=\frac{P_{BEAN}}{W^{\frac{S_{wPOD}}{n}}}](https://imgur.com/a/t5M636H)
 
 Read the justification [here](https://accessible-pyjama-948.notion.site/Beanstalk-wPOD-pricing-function-d2cd7944333c44ee8041e68629b2c7f8), since Github markdown does not natively support LaTeX.
 
