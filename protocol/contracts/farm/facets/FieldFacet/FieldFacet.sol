@@ -5,19 +5,21 @@
 pragma solidity ^0.7.6;
 pragma experimental ABIEncoderV2;
 
-import "./PodTransfer.sol";
+import "./Thresher.sol";
 import "../../../libraries/LibClaim.sol";
 
 /**
  * @author Publius
  * @title Field sows Beans and transfers Pods.
 **/
-contract FieldFacet is PodTransfer {
+contract FieldFacet is Thresher {
 
     using SafeMath for uint256;
     using Decimal for Decimal.D256;
 
     event PlotTransfer(address indexed from, address indexed to, uint256 indexed id, uint256 pods);
+    event PlotWrap(address indexed account);
+    event PlotUnwrap(address indexed account);
     event PodApproval(address indexed owner, address indexed spender, uint256 pods);
 
     /**
@@ -62,7 +64,7 @@ contract FieldFacet is PodTransfer {
     **/
 
     function transferPlot(address sender, address recipient, uint256 id, uint256 start, uint256 end)
-        external
+        public
     {
         require(sender != address(0), "Field: Transfer from 0 address.");
         require(recipient != address(0), "Field: Transfer to 0 address.");
@@ -74,7 +76,7 @@ contract FieldFacet is PodTransfer {
         insertPlot(recipient,id.add(start),amount);
         removePlot(sender,id,start,end);
         if (msg.sender != sender && allowancePods(sender, msg.sender) != uint256(-1)) {
-                decrementAllowancePods(sender, msg.sender, amount);
+            decrementAllowancePods(sender, msg.sender, amount);
         }
         emit PlotTransfer(sender, recipient, id.add(start), amount);
     }
@@ -89,4 +91,19 @@ contract FieldFacet is PodTransfer {
         LibMarket.transferAllocatedBeans(LibClaim.claim(c, true), transferBeans);
     }
 
+    /**
+     * Husk
+    **/
+
+    function wrapPlot(uint256 id, uint256 start, uint256 end) external {
+        transferPlot(msg.sender, address(this), id, start, end);
+        uint256 amount = getPlotPrice(id, start, end);
+        husk().mint(msg.sender, amount);
+    }
+
+    function unwrapPlot(uint256 id, uint256 start, uint256 end) external {
+        uint256 amount = getPlotPrice(id, start, end);
+        husk().burn(amount);
+        transferPlot(address(this), msg.sender, id, start, end);
+    }
 }
